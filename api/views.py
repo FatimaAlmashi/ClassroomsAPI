@@ -40,6 +40,5 @@ class ClassroomUpdateView(RetrieveUpdateAPIView):
 
 class ClassroomDeleteView(DestroyAPIView):
     queryset = Classroom.objects.all()
-    serializer_class = ClassroomListSerializer
     lookup_field = 'id'
     lookup_url_kwarg = 'classroom_id'
